@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+} 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+  text-align: center;
+  height: 50px;
+}
+
+.navbar .navbar-brand {
+  padding-top: 5px;
+}
+
+.nounderline {
+  text-decoration: none !important
+}
+
+.add:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.delete {
+  color: gray !important;
+}
+
+.delete:hover {
+  color: red !important;
+}
+
+.delete:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.edit {
+  color: gray !important;
+}
+
+.edit:hover{
+  color: orange !important;
+
+}
+
+.edit:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }

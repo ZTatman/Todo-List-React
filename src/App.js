@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import ListTaskComponent from './components/ListTaskComponent';
+import HeaderComponent from './components/HeaderComponent';
+import FooterComponent from './components/FooterComponent';
+import TitleComponent from './components/TitleComponent';
+import AddTaskBarComponent from './components/AddTaskBarComponent';
+import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+          <HeaderComponent />
+            <div className="container">
+              <TitleComponent/>
+              <Switch>
+                <Route path="/tasks" component={ListTaskComponent} >
+                  <ListTaskComponent />                
+
+                </Route>
+                <Route path="/" exact component={ListTaskComponent}>
+                <ListTaskComponent />                
+
+                </Route>
+
+              </Switch>
+            </div>
+          <FooterComponent/>
+      </Router>
     </div>
+
   );
 }
 
