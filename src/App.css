@@ -37,6 +37,10 @@
   }
 } 
 
+.logo-brand:hover {
+  color: lightgray !important;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -83,6 +87,19 @@
 }
 
 .edit:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.save {
+  color: gray !important;
+}
+
+.save:hover {
+  color: green !important;
+}
+
+.save:focus {
   outline: none !important;
   box-shadow: none !important;
 }

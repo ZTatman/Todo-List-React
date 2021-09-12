@@ -5,7 +5,7 @@ import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import TitleComponent from './components/TitleComponent';
 import AddTaskBarComponent from './components/AddTaskBarComponent';
-import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
